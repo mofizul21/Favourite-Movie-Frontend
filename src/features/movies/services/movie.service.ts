@@ -1,9 +1,11 @@
 import axios from 'axios';
 import { MovieDocument, Movie } from '../models/Movie';
 
+const BACKEND_API = process.env.REACT_APP_BASE_API;
+
 const getMovies = async () => {
 	const response = await axios.get<MovieDocument[]>(
-		`${process.env.REACT_APP_BASE_API}/movie`
+		`${BACKEND_API}/movie`
 	);
 
 	return response;
@@ -11,7 +13,7 @@ const getMovies = async () => {
 
 const addMovie = async (data: Movie) => {
 	const response = await axios.post<MovieDocument>(
-		`${process.env.REACT_APP_BASE_API}/movie`,
+		`${BACKEND_API}/movie`,
 		data
 	);
 
@@ -19,7 +21,7 @@ const addMovie = async (data: Movie) => {
 };
 const updateMovie = async (id: string, data: Movie) => {
 	const response = await axios.patch<MovieDocument>(
-		`${process.env.REACT_APP_BASE_API}/movie/${id}`,
+		`${BACKEND_API}/movie/${id}`,
 		data
 	);
 
@@ -27,7 +29,7 @@ const updateMovie = async (id: string, data: Movie) => {
 };
 const deleteMovie = async (id: string) => {
 	const response = await axios.delete<MovieDocument>(
-		`${process.env.REACT_APP_BASE_API}/movie/${id}`,
+		`${BACKEND_API}/movie/${id}`,
 		{}
 	);
 

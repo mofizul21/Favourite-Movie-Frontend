@@ -6,9 +6,11 @@ import { Jwt } from '../model/Jwt';
 import { LoginUser } from '../model/LoginUser.interface';
 import { NewUser } from '../model/NewUser';
 
+const BACKEND_API = process.env.REACT_APP_BASE_API;
+
 const register = async (newUser: NewUser): Promise<DisplayUser | null> => {
 	const response = await axios.post(
-		`${process.env.REACT_APP_BASE_API}/auth/register`,
+		`${BACKEND_API}/auth/register`,
 		newUser
 	);
 
@@ -19,7 +21,7 @@ const login = async (
 	user: LoginUser
 ): Promise<{ jwt: Jwt; user: DisplayUser | null }> => {
 	const response = await axios.post(
-		`${process.env.REACT_APP_BASE_API}/auth/login`,
+		`${BACKEND_API}/auth/login`,
 		user
 	);
 
@@ -40,7 +42,7 @@ const logout = (): void => {
 
 const verifyJwt = async (jwt: string): Promise<boolean> => {
 	const response = await axios.post(
-		`${process.env.REACT_APP_BASE_API}/auth/verify-jwt`,
+		`${BACKEND_API}/auth/verify-jwt`,
 		{ jwt }
 	);
 
