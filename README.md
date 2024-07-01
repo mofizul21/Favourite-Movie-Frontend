@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# Favourite-Movie-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Favourite Movie Frontend](https://github.com/mofizul21/Favourite-Movie-Frontend/assets/10583131/2d95e7ca-10f9-4de2-ba14-ec68bf048214)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Favourite-Movie-Frontend is a web application that allows users to manage and explore their favourite movies. The frontend is built with TypeScript and React JS, while the backend is powered by Nest JS and PostgreSQL.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- User authentication and authorization
+- Add, edit, and delete favorite movies
+- Search and filter movies
+- Responsive design for mobile and desktop
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- TypeScript
+- React JS
+- CSS/SCSS
 
-### `npm run build`
+### Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Nest JS
+- PostgreSQL
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js
+- PostgreSQL
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/Favourite-Movie-Frontend.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd Favourite-Movie-Frontend
+    ```
+3. Install the frontend dependencies:
+    ```bash
+    cd frontend
+    npm install
+    ```
+4. Install the backend dependencies:
+    ```bash
+    cd ../backend
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Running the Application
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Start the PostgreSQL database and configure your database connection in `backend/.env`.
+2. Run the backend server:
+    ```bash
+    cd backend
+    npm run start
+    ```
+3. Run the frontend development server:
+    ```bash
+    cd ../frontend
+    npm start
+    ```
 
-## Learn More
+### Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instructions for deploying the application will be provided here.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or feedback, please reach out to me at your.mofizul21@gmail.com.
